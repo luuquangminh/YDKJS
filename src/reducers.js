@@ -1,29 +1,9 @@
 
 
-import { fromJS } from 'immutable';
-import { combineReducers } from 'redux-immutable';
+import { combineReducers } from 'redux';
 import { LOCATION_CHANGE } from 'react-router-redux';
+import books from './containers/BookPage/reducer';
 
-// Initial routing state
-const routeInitialState = fromJS({
-    location: null,
-  });
-
-function routeReducer(state = routeInitialState, action) {
-    switch (action.type) {
-      /* istanbul ignore next */
-      case LOCATION_CHANGE:
-        return state.merge({
-          location: action.payload,
-        });
-      default:
-        return state;
-    }
-  }
-
-export default function createReducer() {
-    return combineReducers({
-      route: routeReducer,
-    });
-  }
-  
+export default combineReducers({
+  books
+});
