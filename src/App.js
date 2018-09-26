@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import NavBar from './NavBar';
-import BookPage from './containers/BookPage';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import BookPage from "./containers/BookPage";
+import { Switch, Route } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 
 class App extends Component {
   render() {
