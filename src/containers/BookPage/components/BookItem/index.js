@@ -1,7 +1,6 @@
 import { Card } from "react-materialize";
 import { Col } from "react-bootstrap";
 import React from "react";
-import { Link } from "react-router-dom";
 import LinesEllipsis from "react-lines-ellipsis";
 import PropTypes from "prop-types";
 
