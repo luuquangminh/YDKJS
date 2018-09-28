@@ -2,9 +2,10 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import BookItem from "../BookItem";
 import "./styles.css";
-export class BookList extends Component {
+export class ListBooks extends Component {
   renderBooks() {
-    return this.props.books.map(book => (
+    const { books = [] } = this.props;
+    return books.map(book => (
       <BookItem book={book} key={book.id} isLoading={this.props.isLoading} />
     ));
   }
@@ -12,8 +13,8 @@ export class BookList extends Component {
     return <div className="books">{this.renderBooks()}</div>;
   }
 }
-BookList.propTypes = {
+ListBooks.propTypes = {
   books: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   isLoading: PropTypes.bool
 };
-export default BookList;
+export default ListBooks;

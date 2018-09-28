@@ -1,4 +1,4 @@
 import SearchBox from "./SearchBox";
-import BookList from "./BookList";
+import ListBooks from "./ListBooks";
 
-export { BookList, SearchBox };
+export { ListBooks, SearchBox };

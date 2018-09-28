@@ -1,12 +1,22 @@
 import { Card } from "react-materialize";
 import { Col } from "react-bootstrap";
 import React from "react";
+import { Link } from "react-router-dom";
 import LinesEllipsis from "react-lines-ellipsis";
 import PropTypes from "prop-types";
 
 const BookItem = ({ book }) => (
   <Col md={4}>
     <Card className="medium">
+      <div>
+        <Link
+          to={`/book/${book.id}`}
+          className="book-wrapper__link"
+          role="button"
+        >
+          More info
+        </Link>
+      </div>
       <LinesEllipsis
         text={book.volumeInfo.title}
         maxLine="2"
