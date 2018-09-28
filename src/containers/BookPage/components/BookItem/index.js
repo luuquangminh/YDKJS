@@ -1,8 +1,8 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { Card } from "react-materialize";
 import { Col } from "react-bootstrap";
-import React from "react";
 import LinesEllipsis from "react-lines-ellipsis";
-import PropTypes from "prop-types";
 
 const BookItem = ({ book }) => (
   <Col md={4}>
