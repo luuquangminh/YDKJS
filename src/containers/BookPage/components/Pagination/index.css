@@ -1,0 +1,11 @@
+.Pagination {
+}
+
+.Pagination .page {
+  margin: 5px;
+  cursor: pointer;
+  color: blue;
+}
+
+.Pagination .page.active {
+}
